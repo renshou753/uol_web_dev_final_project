@@ -53,17 +53,3 @@ class Typer {
     }
   };
 }
-
-const typer = new Typer();
-typer.speed = 3;
-typer.file = "newsletter/index.html";
-typer.init();
-
-var timer = setInterval("t();", 30);
-function t() {
-  typer.addText();
-
-  if (typer.index > typer.text.length) {
-    clearInterval(timer);
-  }
-}
