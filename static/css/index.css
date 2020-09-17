@@ -11,3 +11,36 @@ body {
   margin-top: 120px;
   font-size: 16px;
 }
+
+a {
+  color: rgb(19, 167, 105);
+  text-decoration: none;
+}
+
+#a {
+  color: rgb(223, 21, 206);
+}
+
+#c {
+  color: #0bc;
+}
+
+#b {
+  color: #ff0096;
+}
+
+#k {
+  animation: change 0.5s;
+}
+
+@keyframes change {
+  0% {
+    color: #0f0;
+  }
+  50% {
+    color: #0f0;
+  }
+  99% {
+    color: black;
+  }
+}
