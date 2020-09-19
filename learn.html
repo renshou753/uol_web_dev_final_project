@@ -1,28 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" slick-uniqueid="3">
   <head>
-    <meta charset="UTF-8" />
+    <title>Posts :: Terminal</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hacker Night</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+
+    <link rel="stylesheet" href="static/css/learn.css" />
   </head>
-  <body>
-    <div id="console"></div>
-    <script type="text/javascript" , src="../static/js/index.js"></script>
-    <script>
-      const typer = new Typer();
-      typer.speed = 3;
-      typer.file = "transcript/learn.html";
-      typer.init();
 
-      var timer = setInterval("t();", 30);
-      function t() {
-        typer.addText();
+  <body class="orange">
+    <div class="container headings--one-size">
+      <header class="header">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="">
+              <div class="logo">Terminal</div>
+            </a>
+          </div>
+        </div>
+      </header>
 
-        if (typer.index > typer.text.length) {
-          clearInterval(timer);
-        }
-      }
-    </script>
+      <div id="sidebar">
+        <div id="sponsor">
+          <div class="sponsor">
+            SHG - The Secret Hacker Group. Overload Proxy, SSHCrack, PortHack.
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="posts">
+          <div class="post on-list">
+            <h1 class="post-title">
+              <a href="">Solve the firewall</a>
+            </h1>
+            <div class="post-meta">
+              <span class="post-date"> 2020-03-11 </span>
+
+              <span class="post-author">:: Tony</span>
+            </div>
+
+            <span class="post-tags"> #<a href="">firewall</a> </span>
+
+            <div class="post-content">
+              Some tricks to bypass the windows system firewall
+            </div>
+
+            <div>
+              <a class="read-more button" href="">Read more →</a>
+            </div>
+          </div>
+
+          <div class="post on-list">
+            <h1 class="post-title">
+              <a href="">Hack the SQL Server</a>
+            </h1>
+            <div class="post-meta">
+              <span class="post-date"> 2020-09-11 </span>
+
+              <span class="post-author">:: Chloe</span>
+            </div>
+
+            <span class="post-tags"> #<a href="">sql</a> </span>
+
+            <div class="post-content">
+              Some tricks to hack windows sql server
+            </div>
+
+            <div>
+              <a class="read-more button" href="">Read more →</a>
+            </div>
+          </div>
+
+          <div class="post on-list">
+            <h1 class="post-title">
+              <a href="">Hack the SSH Port</a>
+            </h1>
+            <div class="post-meta">
+              <span class="post-date"> 2020-09-18 </span>
+
+              <span class="post-author">:: Wei</span>
+            </div>
+
+            <span class="post-tags"> #<a href="">ssh</a> </span>
+
+            <div class="post-content">Hack port to gain admin access</div>
+
+            <div>
+              <a class="read-more button" href="">Read more →</a>
+            </div>
+          </div>
+
+          <div class="post on-list">
+            <h1 class="post-title">
+              <a href="">Hack the HTTP Web Server</a>
+            </h1>
+            <div class="post-meta">
+              <span class="post-date"> 2020-09-19 </span>
+
+              <span class="post-author">:: Joe</span>
+            </div>
+
+            <span class="post-tags"> #<a href="">http</a> </span>
+
+            <div class="post-content">
+              What could be more vulnerable than a http web server
+            </div>
+
+            <div>
+              <a class="read-more button" href="">Read more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

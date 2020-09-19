@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hacker Night</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+  </head>
+  <body>
+    <div id="console"></div>
+    <script type="text/javascript" , src="../static/js/index.js"></script>
+    <script>
+      const typer = new Typer();
+      typer.speed = 3;
+      typer.file = "transcript/task1.html";
+      typer.init();
+
+      var timer = setInterval("t();", 30);
+      function t() {
+        typer.addText();
+
+        if (typer.index > typer.text.length) {
+          clearInterval(timer);
+        }
+      }
+    </script>
+  </body>
+</html>
