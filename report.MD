@@ -30,7 +30,7 @@ I have considered many usability factors, the site has to be visually appealing,
 
 The most challenging thing for me was to use javascript to let the site dynamically types the characters on screen pace by pace. I had to reference many materials online, for a while I found something useful called [How to make a Terminal like Portfolio Website for yourself](https://hackernoon.com/how-to-make-a-terminal-like-portfolio-website-for-yourself-27d7a7030004).[^2] However, it appears the author used ES5 to make the visual effects but I want to apply ES6 I recently learned to make this site, so I kind of refactored everything into ES6 syntax to make the code more compact also more reusable.
 
-Also, making all those css are a pain for me, I had to make everything from scratch by checking the effects on chrome dev tools, then basically type all those css line by line. For me it was quite a learning curve, somehow I got used to use all those css frameworks like bootstrap or material design, it was something completely different to make these css by my self.
+Also, making all those css are a pain for me, I had to make everything from scratch by checking the effects on chrome dev tools, then basically type all those css line by line. For me it was quite a learning curve, somehow I got used to use all those css frameworks like bootstrap or material design, it was something completely different to make these css by myself.
 
 Lastly, in order to write this report I also learned some new markdown tricks, it was super efficient to use markdown to write academic paper then basically convert the markdown file to html in the end. Here I recommend using vscode since it has many awesome extensions to expand the basic functionalities of markdown which makes the tool super handy for me.
 
@@ -60,16 +60,26 @@ task1.html
 task2.html
 ```
 
+```dot
+digraph G {
+    "index.html" -> "learn.html"
+    "index.html" -> "leaderBoard.html"
+    "index.html" -> "task1.html"
+    "index.html" -> "task2.html"
+}
+
+```
+
 Wireframes, Mockups
 
 index.html, task1.html, task2.html
-![index.html](https://www.dropbox.com/s/zwkaim27vwyjha4/Untitled.001.jpeg)
+![index.html](/images/Untitled.001.jpeg)
 
 leaderBoard.html
-![leaderboard.html](https://www.dropbox.com/s/cjfml4syqhxtukv/Untitled.002.jpeg)
+![leaderboard.html](/images/Untitled.002.jpeg)
 
 learn.html
-![learn.html](https://www.dropbox.com/s/uti1p8cjm69ew6h/Untitled.003.jpeg)
+![learn.html](/images/Untitled.003.jpeg)
 
 # Cite
 
